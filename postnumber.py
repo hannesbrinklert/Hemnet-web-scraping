@@ -1,14 +1,9 @@
 from selenium import webdriver
 from urllib3 import disable_warnings
 
-""" options = webdriver.ChromeOptions()
-options.binary_location = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
-driver = webdriver.Chrome(options=options, executable_path="C:/Windows/ChromeDriver/chromedriver.exe")
- """
-
-
 def getPostNumber(str):
     options = webdriver.ChromeOptions()
+    #This path has to be modified for your own computer.
     driver = webdriver.Chrome(
         options=options, executable_path="C:/Windows/ChromeDriver/chromedriver.exe")
     driver.get('https://www.postnord.se/vara-verktyg/sok-postnummer-och-adress')
